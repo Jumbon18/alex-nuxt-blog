@@ -1,6 +1,6 @@
 <template>
 <nav>
-  <h1>Alex's Nuxt Blog</h1>
+  <h1>Alex Nuxt Blog</h1>
 </nav>
 </template>
 

@@ -18,7 +18,11 @@
 
     export default {
         head: {
-            title: `Главная | ${process.env.appName}`
+            title: `Главная | ${process.env.appName}`,
+            meta:[
+                {hid:'homepaged',name:'description',content:'Самый лучший js блог'},
+                {hid:'homepagek',name:'keywords',content:'блог, js, nuxt'}
+            ]
         },
         async fetch({store}) {
             await store.dispatch('post/fetch');

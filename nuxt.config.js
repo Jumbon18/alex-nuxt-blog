@@ -4,11 +4,13 @@ module.exports = {
   mode: 'universal',
 
   head: {
-    title: pkg.name,
+    title: 'SSR Blog',
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-      {hid: 'description', name: 'description', content: pkg.description}
+      {hid: 'description', name: 'description', content:'Блог написан Лешей с использование Nuxt SSR' },
+      {hid:'keywords',name:'keywords',content:'js, javascript, ssr, blog'}
+
     ],
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
@@ -35,7 +37,7 @@ module.exports = {
   ],
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-    baseURL: process.env.BASE_URL || 'http://localhost:3000'
+    baseURL:'http://127.0.0.1:3000/'
   },
   env: {
     appName: 'Alex\'s Nuxt Blog'
